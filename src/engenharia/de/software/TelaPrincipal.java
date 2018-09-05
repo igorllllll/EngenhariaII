@@ -89,20 +89,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Id", "Nome", "Email"
+                "Nome", "Telefone", "Email"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(2).setResizable(false);
-        }
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Id", "Titulo", "Autor", "Ano"
+                "Titulo", "Autor", "Ano", "Quantidade"
             }
         ));
         jScrollPane2.setViewportView(jTable2);
