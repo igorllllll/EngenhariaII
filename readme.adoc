@@ -1,4 +1,4 @@
-[[sd]]
+[[titulo]]
 = Projeto - Desenvolvimento de um sistema bibliotecário
 :icons:
 :toc: macro
@@ -7,7 +7,7 @@
 
 toc::[]
 
-[[welcome-to-minishift]]
+[[bemvindo]]
 == Welcome to Minishift!
 
 Minishift is a tool that helps you run OpenShift locally by running a
