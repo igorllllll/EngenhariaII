@@ -1,5 +1,5 @@
-[[minishift]]
-= Projeto de desenvolvimento de um sistema bibliotecário
+[[sd]]
+= Projeto - Desenvolvimento de um sistema bibliotecário
 :icons:
 :toc: macro
 :toc-title:
