@@ -55,7 +55,7 @@ Por exemplo, a Figura \ref{passaro} mostra um pássaro que possui as cores da ba
 Para referenciar essa figura no texto utilize: Figura \ref{passaro} ou \autoref{passaro}
 -->
 
-![Pássaro com as cores da bandeira do Brasil](imagens/passaro.jpg){#passaro width=40%}
+![Pássaro com as cores da bandeira do Brasil](http://cursos.unipampa.edu.br/cursos/engenhariadesoftware/files/2016/08/Logo-ES-Sem-letras-Fundo-branco.jpg){#passaro width=40%}
 
 Fonte: \citeonline{limarka}
 
