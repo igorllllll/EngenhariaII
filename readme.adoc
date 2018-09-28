@@ -1,72 +1,62 @@
 [[titulo]]
 = Projeto - Desenvolvimento de um sistema bibliotecário
-:icons:
-:toc: macro
-:toc-title:
-:toclevels: 1
+# Introdução
 
-toc::[]
+## Motivação
 
-[[bemvindo]]
-== Welcome to Minishift!
+## Objetivos
 
-Minishift is a tool that helps you run OpenShift locally by running a
-single-node OpenShift cluster inside a VM. You can try out OpenShift or
-develop with it, day-to-day, on your local host.
+### Objetivo geral
 
-Minishift uses https://github.com/docker/machine/tree/master/libmachine[libmachine] for
-provisioning VMs, and https://github.com/openshift/origin[OpenShift Origin] for running the cluster. The code base is forked from the https://github.com/kubernetes/minikube[Minikube] project.
+Apresentação do objetivo geral.
 
-https://travis-ci.org/minishift/minishift[image:https://secure.travis-ci.org/minishift/minishift.png[Build Status]]
-https://ci.appveyor.com/project/minishift-bot/minishift/branch/master[image:https://ci.appveyor.com/api/projects/status/o0mha7mpanp7dpyo/branch/master?svg=true[Build status]]
-https://circleci.com/gh/minishift/minishift/tree/master[image:https://circleci.com/gh/minishift/minishift/tree/master.svg?style=svg[Build status]]
-https://ci.centos.org/job/minishift/[image:https://ci.centos.org/buildStatus/icon?job=minishift[Build Status]]
+### Objetivos específicos
 
-'''''
+- objetivo 1
+- objetivo 2
+- objetivo 3
 
-[[getting-started]]
-== Getting started
+<!-- 
+Isto é um comentário, mesma sintaxe do HTML. Para conhecer a sintaxe 
+do limarka consulte: https://github.com/abntex/limarka/wiki/Sintaxe 
+-->
 
-To download the latest binary and review release notes, see
-the https://github.com/minishift/minishift/releases[Minishift releases] page.
+# Como utilizar recursos do limarka
 
-Minishift requires a hypervisor to start the virtual machine on which the OpenShift cluster
-is provisioned. Make sure that the hypervisor of your choice is installed and enabled on
-your system before you start Minishift.
+**Consulte o wiki do projeto**: https://github.com/abntex/limarka/wiki
 
-For detailed installation instructions for Minishift and the required dependencies, see
-the https://docs.okd.io/latest/minishift/getting-started/index.html[Getting started] documentation.
+Cada capítulo inicia automaticamente em página ímpar (em conformidade com as Normas). Por isso que existem várias páginas em branco nesse documento.
 
-[[documentation]]
-== Documentation
+## Como citar e referenciar
 
-Minishift documentation is published as a part of the
-OpenShift Origin link:https://docs.okd.io/latest[documentation library].
-Check out the latest official Minishift documentation for information about getting started,
-using, and contributing to Minishift:
+O arquivo de referências é configurado em "configuracao.pdf", utilize-o
+para gerenciar suas referências.
 
-- https://docs.okd.io/latest/minishift/getting-started/index.html[Getting started with Minishift]
-- https://docs.okd.io/latest/minishift/using/index.html[Using Minishift]
-- https://docs.okd.io/latest/minishift/contributing/index.html[Developing and contributing to Minishift]
-- https://docs.okd.io/latest/minishift/command-ref/minishift.html[Command Reference]
+Veja um exemplo de citação direta e referenciação a seguir:
 
-In addition, you can review the release notes and project roadmap here on GitHub:
+> A ‘norma’ 6023:2000 (2) é complicada e cheia de inconsistências. Jamais será
+possível gerar um estilo bibtex totalmente consistente com a ‘norma’, até porque
+nem a ‘norma’ é compatível com ela mesma. Um bom estilo bibliográfico deve
+ter uma linha lógica para formatação de referências. Assim, com alguns poucos
+exemplos, qualquer pessoa poderia deduzir os casos omissos. Nesse sentido, a
+‘norma’ 6023 trafega pela contra-mão. É quase impossível deduzir sua linha lógica.
+O problema mais grave, no entanto, fica pela maneira de organizar nomes. A ABNT
+quebrou o sobrenome em duas partes. Normalmente se fala apenas em “*last name*”,
+mas agora temos o “*last last name*” graças à ABNT. \cite[p. 5]{abntex2cite}.
 
-- https://github.com/minishift/minishift/releases[Release Notes]
-- link:./ROADMAP.adoc[Roadmap]
+Consulte o documento \citeonline{abntex2cite} para conhecer como referenciar os
+conteúdos.
 
-[[community]]
-== Community
+## Como inserir imagens
 
-Contributions, questions, and comments are all welcomed and encouraged!
+Por exemplo, a Figura \ref{passaro} mostra um pássaro que possui as cores da bandeira do Brasil. 
 
-You can reach the Minishift community by:
+<!--
+Para referenciar essa figura no texto utilize: Figura \ref{passaro} ou \autoref{passaro}
+-->
 
-- Signing up to our https://lists.minishift.io/admin/lists/minishift.lists.minishift.io[mailing list]
-- Joining the #minishift channel on https://freenode.net/[Freenode IRC]
+![Pássaro com as cores da bandeira do Brasil](imagens/passaro.jpg){#passaro width=40%}
 
-For information about contributing, building, and releasing Minishift, as well as guidelines for
-writing documentation, see the https://docs.okd.io/latest/minishift/contributing/index.html[Contributing to Minishift] topics.
+Fonte: \citeonline{limarka}
 
-If you want to contribute, make sure to follow the link:CONTRIBUTING.adoc[contribution guidelines]
-when you open issues or submit pull requests.
+As imagens são inseridas o mais próximo possível do texto que as referenciam.
