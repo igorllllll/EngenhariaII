@@ -11,27 +11,48 @@ import java.sql.Statement;
 
 public class Inserir {
     
-    
-    public String peso;
-    public String altura;
-    public String imc;
-    public String user_fk;
+    public String _nome,
+    _idade,
+    _cpf,
+    _tel,
+    _sex,
+    _end,
+    _usuario,
+    _senha;
     private final Connection connect;
-
-    public Inserir(String peso, String altura, String imc, String user_fk) throws SQLException {
+    
+    public Inserir(String nome, String _idade, String _cpf, String _tel, String _sex, String _end, String _usuario, String _senha) throws SQLException {
         
-        this.peso = peso;
-        this.altura = altura;
-        this.imc = imc;
-        this.user_fk = user_fk;
+        this._nome = nome;
+        this._idade = _idade;
+        this._cpf = _cpf;
+        this._tel = _tel;
+        this._sex = _sex;
+        this._end = _end;
+        this._usuario = _usuario;
+        this._senha = _senha;
+        
         this.connect = Conexao.getConnection();
-        insertData();
+        insertClientes();
     }
+    
+    
+
+
    
-    private void insertData() throws SQLException{
-        
+    private void insertClientes() throws SQLException{
+
         Statement stat = connect.createStatement();
-        String Data  = "insert into hist (_peso, _altura, _imc, FK_USER) values ('"+peso+"','"+altura+"','"+imc+"','"+user_fk+"');";
+        String Data  = "insert into clientes (_nome, _idade, _cpf, _tel, _sex, _end, _usuario, _senha) values ('"
+                + ""+_nome+"',"
+                + "'"+_idade+"',"
+                + "'"+_cpf+"','"
+                + ""+_tel+"','"
+                + ""+_sex+"','"
+                + ""+_end+"','"
+                + ""+_usuario+"','"
+                + ""+_senha+""
+                + "');";
         stat.execute(Data);
         connect.close();
     }   
