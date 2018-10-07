@@ -34,4 +34,4 @@ insert into users(_nome, _senha, _sexo) values ("Orrana", "2009", "Fêmea");
 insert into hist(_peso, _altura, _imc, FK_USER) values (74.6, 1.74, 24.6, 1);
 
 
-select * from users;
+select * from clientes;

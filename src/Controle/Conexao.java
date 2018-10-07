@@ -10,14 +10,14 @@ import java.sql.SQLException;
 
 public class Conexao {
     
-    private static final String url = "jdbc:mysql://localhost/sd";
+    private static final String url = "jdbc:mysql://localhost/biblioteca";
     private static Connection connnect = null;
     
     public static Connection getConnection() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
 
-            connnect = DriverManager.getConnection(url, "mpgx5c", "");
+            connnect = DriverManager.getConnection(url, "mpgx5c", "senha");
 
         } catch (ClassNotFoundException ex) {
             System.out.println("Driver mysql nao encontrado");

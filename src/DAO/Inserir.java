@@ -19,6 +19,7 @@ public class Inserir {
     _end,
     _usuario,
     _senha;
+    
     private final Connection connect;
     
     public Inserir(String nome, String _idade, String _cpf, String _tel, String _sex, String _end, String _usuario, String _senha) throws SQLException {
