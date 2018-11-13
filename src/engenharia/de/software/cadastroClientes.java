@@ -215,6 +215,12 @@ public class cadastroClientes extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:       
+        dispose();
+        telaPrincipal b = new telaPrincipal();
+        b.setTitle("Tela Inicial");
+        b.setVisible(true);
+        b.setLocationRelativeTo(null);
+        b.setSize(1059, 608);
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -103,7 +103,7 @@ public class login extends javax.swing.JFrame {
         telaPrincipal co = new telaPrincipal();
         co.setVisible(true);
         co.setLocationRelativeTo(null);
-        co.setSize(1059, 608);
+        co.setSize(800, 600);
         
 
     }//GEN-LAST:event_jButton1ActionPerformed
