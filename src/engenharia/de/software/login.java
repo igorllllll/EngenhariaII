@@ -27,9 +27,9 @@ public class login extends javax.swing.JFrame {
 
         jButton2.setText("Cadastrar");
 
-        jLabel1.setText("Login");
+        jLabel1.setText("Login:");
 
-        jLabel2.setText("Senha");
+        jLabel2.setText("Senha:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

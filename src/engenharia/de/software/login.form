@@ -115,12 +115,12 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Login"/>
+            <Property name="text" type="java.lang.String" value="Login:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Senha"/>
+            <Property name="text" type="java.lang.String" value="Senha:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField1">
