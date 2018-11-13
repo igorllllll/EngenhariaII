@@ -220,7 +220,7 @@ public class cadastroClientes extends javax.swing.JFrame {
         b.setTitle("Tela Inicial");
         b.setVisible(true);
         b.setLocationRelativeTo(null);
-        b.setSize(1059, 608);
+        b.setSize(800, 600);
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -139,7 +139,7 @@ public class cadastroLivros extends javax.swing.JFrame {
             b.setTitle("Tela Inicial");
             b.setVisible(true);
             b.setLocationRelativeTo(null);
-            b.setSize(1059, 608);        // TODO add your handling code here:
+            b.setSize(800, 600);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
