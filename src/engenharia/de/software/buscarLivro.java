@@ -186,7 +186,6 @@ public class buscarLivro extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
         telaPrincipal b = new telaPrincipal();
-        b.setTitle("Tela Inicial");
         b.setVisible(true);
         b.setLocationRelativeTo(null);
         b.setSize(800, 600);
