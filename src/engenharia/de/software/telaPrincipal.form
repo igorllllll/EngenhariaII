@@ -117,12 +117,15 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton7">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Estoque"/>
+        <Property name="text" type="java.lang.String" value="Buscar Livro"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton8">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Listar Clientes"/>
+        <Property name="text" type="java.lang.String" value="Buscar Cliente"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton9">

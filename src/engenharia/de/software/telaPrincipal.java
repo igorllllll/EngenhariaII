@@ -46,9 +46,14 @@ public class telaPrincipal extends javax.swing.JFrame {
 
         jButton6.setText("Vendas");
 
-        jButton7.setText("Estoque");
+        jButton7.setText("Buscar Livro");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
-        jButton8.setText("Listar Clientes");
+        jButton8.setText("Buscar Cliente");
 
         jButton9.setText("Alterar Clientes");
 
@@ -145,6 +150,10 @@ public class telaPrincipal extends javax.swing.JFrame {
         co.setSize(800, 600);
         
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     public static void main(String args[]) {
         try {
