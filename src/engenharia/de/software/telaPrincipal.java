@@ -121,6 +121,13 @@ public class telaPrincipal extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        dispose();
+        cadastroLivros co = new cadastroLivros();
+        co.setVisible(true);
+        co.setLocationRelativeTo(null);
+        co.setSize(1059, 608);
+        
+
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
