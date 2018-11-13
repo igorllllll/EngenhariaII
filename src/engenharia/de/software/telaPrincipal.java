@@ -1,6 +1,8 @@
 
 package engenharia.de.software;
 
+import javax.swing.JOptionPane;
+
 public class telaPrincipal extends javax.swing.JFrame {
 
     public telaPrincipal() {
@@ -25,6 +27,11 @@ public class telaPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setText("Cadastrar Livro");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Cadastrar Cliente");
 
@@ -41,6 +48,11 @@ public class telaPrincipal extends javax.swing.JFrame {
         jButton9.setText("Alterar Clientes");
 
         jButton10.setText("Sair");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         jButton11.setText("Sobre");
 
@@ -98,6 +110,19 @@ public class telaPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        if(JOptionPane.showConfirmDialog(null, "Deseja Realmente Sair?") == 0){
+            System.exit(0);
+        }   
+        
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {
         try {
