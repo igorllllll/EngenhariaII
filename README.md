@@ -1,6 +1,7 @@
 ﻿
-Livraria do Nico e os Nove - Desenvolvimento de um sistema bibliotecário
+Livraria do Nico e os Nove - Desenvolvimento de um sistema de gerenciamento de uma Livraria
 # Introdução
+Este documento contém uma descrição do propósito do sistema (com base no escopo estabelecido no plano de projeto). Contendo o detalhamento dos requisitos funcionais e não funcionais, e dos diagramas de casos de uso associados com as descrições.
 
 ## Motivação
 
