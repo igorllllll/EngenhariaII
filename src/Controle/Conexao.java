@@ -17,7 +17,7 @@ public class Conexao {
         try {
             Class.forName("com.mysql.jdbc.Driver");
 
-            connnect = DriverManager.getConnection(url, "mpgx5c", "senha");
+            connnect = DriverManager.getConnection(url, "root", "");
 
         } catch (ClassNotFoundException ex) {
             System.out.println("Driver mysql nao encontrado");
