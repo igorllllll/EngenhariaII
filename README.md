@@ -3,7 +3,15 @@ Livraria do Nico e os Nove - Desenvolvimento de um sistema de gerenciamento de u
 # Introdução
 Este documento contém uma descrição do propósito do sistema (com base no escopo estabelecido no plano de projeto). Contendo o detalhamento dos requisitos funcionais e não funcionais, e dos diagramas de casos de uso associados com as descrições.
 
-## Motivação
+## Propósito do Documento
+A especificação de requisitos para o sistema  da Livraria do Nico e os Nove, que armazenará as informações em um banco de dados que apenas o administrador do sistema terá acesso.
+
+## Escopo do Produto
+O escopo deste sistema, consiste em inserir dados para facilitar o gerenciamento das informações da Livraria do Nico e os Nove, que necessitem o uso deste.
+
+## Visão Geral do Documento
+Este documento apresenta uma descrição geral do sistema, e logo em seguida descreve suas funcionalidades especificando as entradas e saídas para todos os requisitos funcionais. Contendo uma descrição sucinta dos requisitos não funcionais contidos neste sistema.
+
 
 ## Objetivos
 
