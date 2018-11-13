@@ -34,6 +34,11 @@ public class telaPrincipal extends javax.swing.JFrame {
         });
 
         jButton3.setText("Cadastrar Cliente");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Remover Livro");
 
@@ -125,11 +130,21 @@ public class telaPrincipal extends javax.swing.JFrame {
         cadastroLivros co = new cadastroLivros();
         co.setVisible(true);
         co.setLocationRelativeTo(null);
-        co.setSize(1059, 608);
+        co.setSize(800, 600);
         
 
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        cadastroClientes co = new cadastroClientes();
+        co.setVisible(true);
+        co.setLocationRelativeTo(null);
+        co.setSize(800, 600);
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     public static void main(String args[]) {
         try {
