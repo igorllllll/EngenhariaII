@@ -3,12 +3,15 @@ package DAO;
 
 import java.sql.SQLException;
 
-public class teste {
+public class TesteDAO {
     
     public static void main(String [] args) throws SQLException{
         
         Login login = new DAO.Login();
-        if(login.checkLogin("mpgx5.c","hacker@x5")){
+        String user = "mpgx5.c",
+                pwd = "hacker@x5";
+        
+        if(login.checkLogin(user, pwd)){
             System.out.println("Login Realizado!");
         }else{
             System.out.println("Login Falhou!");
