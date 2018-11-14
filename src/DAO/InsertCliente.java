@@ -10,11 +10,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 
-public class Inserir {
+public class InsertCliente {
     
     private final Connection connect;
     
-    public Inserir(Cliente vars) throws SQLException {
+    public InsertCliente(Cliente vars) throws SQLException {
         this.connect = Conexao.getConnection();
         insertClientes(vars);
     }
