@@ -10,5 +10,9 @@ package Bean;
  * @author Tiago Oliveira
  */
 public class Livro {
-    
+    private String _titulo;
+    private String _autor;
+    private String _genero;
+    private int _ano;
+    private float _valor;
 }

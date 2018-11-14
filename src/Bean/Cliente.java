@@ -10,6 +10,7 @@ package Bean;
  * @author Tiago Oliveira
  */
 public class Cliente {
+    
     private String _nome;
     private int _idade;
     private String _cpf;
