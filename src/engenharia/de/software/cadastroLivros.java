@@ -1,7 +1,6 @@
 
 package engenharia.de.software;
 
-import Bean.Cliente;
 import Bean.Livro;
 import java.sql.SQLException;
 import java.util.logging.Level;

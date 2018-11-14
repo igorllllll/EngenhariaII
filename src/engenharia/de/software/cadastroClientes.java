@@ -242,27 +242,20 @@ public class cadastroClientes extends javax.swing.JFrame {
            || (sex.getText().isEmpty()) || (end.getText().isEmpty()) || (user.getText().isEmpty()) || (pass.getText().isEmpty())){
             JOptionPane.showMessageDialog(null, "Por favor, Preencha os campos obrigatórios!","Aviso",JOptionPane.WARNING_MESSAGE);
             dispose();
-            cadastroClientes co = new cadastroClientes();
-            co.setVisible(true);
-            co.setLocationRelativeTo(null);
-            co.setSize(800, 600);
+            new cadastroClientes().setVisible(true);
         }else{
-            JOptionPane.showMessageDialog(null, "Cadastrado Com Sucesso!");
-            dispose();
-            telaPrincipal b = new telaPrincipal();
-            b.setVisible(true);
-            b.setLocationRelativeTo(null);
-            b.setSize(800, 600);
-        }
                    
-        try {
-            new DAO.InsertCliente(
-                new Cliente(nome.getText(), idade.getText(), cpf.getText(), tel.getText(), sex.getText(), end.getText(), user.getText(), pass.getText())
-            );
-        } catch (SQLException ex) {
-            Logger.getLogger(cadastroClientes.class.getName()).log(Level.SEVERE, null, ex);
+            try {
+                new DAO.InsertCliente(
+                    new Cliente(nome.getText(), idade.getText(), cpf.getText(), tel.getText(), sex.getText(), end.getText(), user.getText(), pass.getText())
+                );
+            } catch (SQLException ex) {
+                Logger.getLogger(cadastroClientes.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
-
+        
+        JOptionPane.showMessageDialog(null, "Cadastro com sucesso!","Aviso",JOptionPane.WARNING_MESSAGE);
+        dispose();
     }//GEN-LAST:event_salvarActionPerformed
 
     private void nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeActionPerformed
