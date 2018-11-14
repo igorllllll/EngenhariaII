@@ -1,4 +1,4 @@
-
+﻿
 create database biblioteca;
 show databases;
 use biblioteca;
@@ -23,7 +23,7 @@ create table livro(
 	_autor  varchar(45) NOT NULL,
     _genero  varchar(45) NOT NULL,
     _ano  varchar(10) NOT NULL,
-    _nome  float NOT NULL
+    _valor  float NOT NULL
 );
 
 drop table users, users;

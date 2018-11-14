@@ -130,7 +130,8 @@ public class login extends javax.swing.JFrame {
             co.setLocationRelativeTo(null);
             co.setSize(800, 600);
         }else{
-            System.out.println("Login Falhou!");
+            dispose();
+            new login().setVisible(true);
         }
         
 
