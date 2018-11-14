@@ -2,7 +2,6 @@
 package engenharia.de.software;
 
 import Bean.Cliente;
-import DAO.InsertCliente;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -252,10 +251,11 @@ public class cadastroClientes extends javax.swing.JFrame {
             } catch (SQLException ex) {
                 Logger.getLogger(cadastroClientes.class.getName()).log(Level.SEVERE, null, ex);
             }
+            JOptionPane.showMessageDialog(null, "Cadastro com sucesso!","Aviso",JOptionPane.WARNING_MESSAGE);
+            dispose();
         }
         
-        JOptionPane.showMessageDialog(null, "Cadastro com sucesso!","Aviso",JOptionPane.WARNING_MESSAGE);
-        dispose();
+
     }//GEN-LAST:event_salvarActionPerformed
 
     private void nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeActionPerformed
