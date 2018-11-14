@@ -12,13 +12,27 @@ package Bean;
 public class Cliente {
     
     private String _nome;
-    private int _idade;
+    private String _idade;
     private String _cpf;
     private String _tel;
     private String _sex;
     private String _end;
     private String _usuario;
     private String _senha;
+
+    public Cliente() {
+    }
+    
+    public Cliente(String _nome, String _idade, String _cpf, String _tel, String _sex, String _end, String _usuario, String _senha) {
+        this._nome = _nome;
+        this._idade = _idade;
+        this._cpf = _cpf;
+        this._tel = _tel;
+        this._sex = _sex;
+        this._end = _end;
+        this._usuario = _usuario;
+        this._senha = _senha;
+    }
 
     public String getNome() {
         return _nome;
@@ -28,11 +42,11 @@ public class Cliente {
         this._nome = _nome;
     }
 
-    public int getIdade() {
+    public String getIdade() {
         return _idade;
     }
 
-    public void setIdade(int _idade) {
+    public void setIdade(String _idade) {
         this._idade = _idade;
     }
 
