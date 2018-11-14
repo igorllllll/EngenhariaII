@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class TesteDAO {
     
     public static void main(String [] args) throws SQLException{
-        
+        /*
         Login login = new DAO.Login();
         String user = "mpgx5.c",
                 pwd = "hacker@x5";
@@ -16,6 +16,7 @@ public class TesteDAO {
         }else{
             System.out.println("Login Falhou!");
         }
-        //Inserir inserir = new DAO.Inserir("Mateus", "22", "067.908.453-30", "(89) 98134-4567", "Masculino", "Rua. Mário Martíns", "mpgx5.c", "hacker@x5");
+        */
+        Inserir inserir = new DAO.Inserir("Tiago", "22", "067.908.453-30", "(89) 98134-4567", "Feminino", "Rua. Mário Martíns", "admin", "admin");
     }
 }

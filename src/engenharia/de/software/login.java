@@ -2,6 +2,7 @@
 package engenharia.de.software;
 
 import DAO.Login;
+import javax.swing.JOptionPane;
 
 public class login extends javax.swing.JFrame {
 
@@ -131,21 +132,14 @@ public class login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        dispose();
-        Login login = new DAO.Login();
+        Login dao = new Login();
 
-        if(login.checkLogin(user.getText(), pwd.getText())){
-            telaPrincipal co = new telaPrincipal();
-            co.setVisible(true);
-            co.setLocationRelativeTo(null);
-            co.setSize(800, 600);
+        if(dao.checkLogin(user.getText(), pwd.getText())){
+            new telaPrincipal().setVisible(true);
+            this.dispose();
         }else{
-            status.setText("Erro Login ou Senha ");
+            JOptionPane.showMessageDialog(null, "Senha incorreta!");
         }
-        
-
-        
-
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void userActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userActionPerformed
