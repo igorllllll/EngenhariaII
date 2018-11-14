@@ -6,6 +6,7 @@ import DAO.InsertCliente;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 public class cadastroClientes extends javax.swing.JFrame {
 
@@ -237,7 +238,23 @@ public class cadastroClientes extends javax.swing.JFrame {
 
     private void salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salvarActionPerformed
 
-
+        if ((nome.getText().isEmpty()) || (idade.getText().isEmpty()) || (cpf.getText().isEmpty()) || (tel.getText().isEmpty())  
+           || (sex.getText().isEmpty()) || (end.getText().isEmpty()) || (user.getText().isEmpty()) || (pass.getText().isEmpty())){
+            JOptionPane.showMessageDialog(null, "Por favor, Preencha os campos obrigatórios!","Aviso",JOptionPane.WARNING_MESSAGE);
+            dispose();
+            cadastroClientes co = new cadastroClientes();
+            co.setVisible(true);
+            co.setLocationRelativeTo(null);
+            co.setSize(800, 600);
+        }else{
+            JOptionPane.showMessageDialog(null, "Cadastrado Com Sucesso!");
+            dispose();
+            telaPrincipal b = new telaPrincipal();
+            b.setVisible(true);
+            b.setLocationRelativeTo(null);
+            b.setSize(800, 600);
+        }
+                   
         try {
             new DAO.InsertCliente(
                 new Cliente(nome.getText(), idade.getText(), cpf.getText(), tel.getText(), sex.getText(), end.getText(), user.getText(), pass.getText())
