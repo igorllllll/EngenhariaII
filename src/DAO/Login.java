@@ -38,8 +38,6 @@ public class Login {
             rs = stmt.executeQuery();
 
             if (rs.next()) {
-
-                
                 check = true;
             }
 
