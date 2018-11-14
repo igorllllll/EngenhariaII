@@ -4,6 +4,11 @@ show databases;
 use biblioteca;
 
 
+create database biblioteca;
+show databases;
+use biblioteca;
+
+
 create table clientes( 
 
 	_id integer NOT NULL auto_increment,
