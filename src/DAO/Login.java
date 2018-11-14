@@ -5,7 +5,7 @@
  */
 package DAO;
 
-import connection.ConnectionFactory;
+import Controle.Conexao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,10 +17,13 @@ import java.util.logging.Logger;
  * @author Tiago Oliveira
  */
 public class Login {
+
+    public Login() {
+    }
     
     public boolean checkLogin(String login, String senha) {
 
-        Connection con = ConnectionFactory.getConnection();
+        Connection con = Conexao.getConnection();
         PreparedStatement stmt = null;
         ResultSet rs = null;
 
@@ -42,8 +45,6 @@ public class Login {
 
         } catch (SQLException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            ConnectionFactory.closeConnection(con, stmt, rs);
         }
 
         return check;
