@@ -1,10 +1,12 @@
 
 package engenharia.de.software;
 
+import Bean.Cliente;
 import Bean.Livro;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 public class cadastroLivros extends javax.swing.JFrame {
 
@@ -154,11 +156,21 @@ public class cadastroLivros extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        try {
-            new DAO.InsertBook(new Livro( titulo.getText(), autor.getText(), genero.getText(), ano.getText(), valor.getText()));
-        } catch (SQLException ex) {
-            Logger.getLogger(cadastroClientes.class.getName()).log(Level.SEVERE, null, ex);
+        if (titulo.getText().isEmpty() || autor.getText().isEmpty() || genero.getText().isEmpty() || ano.getText().isEmpty() || valor.getText().isEmpty()){
+            JOptionPane.showMessageDialog(null, "Por favor, Preencha os campos obrigatórios!","Aviso",JOptionPane.WARNING_MESSAGE);
+            dispose();
+            new cadastroClientes().setVisible(true);
+        }else{
+                   
+            try {
+                new DAO.InsertBook(new Livro( titulo.getText(), autor.getText(), genero.getText(), ano.getText(), valor.getText()));
+            } catch (SQLException ex) {
+                Logger.getLogger(cadastroClientes.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            JOptionPane.showMessageDialog(null, "Cadastro com sucesso!","Aviso",JOptionPane.WARNING_MESSAGE);
+            dispose();
         }
+       
 
 
     }//GEN-LAST:event_jButton2ActionPerformed
